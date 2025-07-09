@@ -12,19 +12,24 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/pretendard@latest/dist/web/variable/pretendardvariable-dynamic-subset.css"
-    />
-    <title>Jonghyuck's Profile</title>
+    <script src="scripts/animate.js"></script>
+    <title>Jonghyuck's Portfolio</title>
   </head>
   <body>
+    <!-- <nav class="navbar">
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#articles">Articles</a></li>
+      </ul>
+    </nav> -->
+
     <div class="container">
       <div class="left-column">
         <h1>안녕하세요, <b>웹 개발자</b> 이종혁입니다.</h1>
         <h2>사용자가 사용하기 쉬운 개발을 지향합니다.</h2>
         <div class="section">
-          <div class="title">EXPERIENCE</div>
+          <div class="title">EXPERIENCES</div>
           <div class="job">
             <h3>개발 연합동아리 코테이토 7기 WEB</h3>
             <a>2023.03 - 2023.12</a>
@@ -91,7 +96,11 @@
         <div class="section">
           <div class="title">EDUCATION</div>
           <h3>동국대학교</h3>
+          <br />
           <p>컴퓨터공학 학사</p>
+          <br />
+          <p>Bachelor of Computer Science & Engineering</p>
+
           <a>2019.03 - 2025.08</a>
         </div>
       </div>
@@ -99,9 +108,10 @@
       <div class="right-column">
         <div class="photo-section">
           <img
-            src="images/profilephoto1.jpg"
+            src="images/profile.jpg"
             alt="사진"
             class="profile-photo"
+            oncontextmenu="return false"
           />
 
           <div class="contact">
@@ -178,5 +188,51 @@
         </div>
       </div>
     </div>
+    <section class="projects-section" id="projects" data-animate="fade-up">
+      <div class="section-title">
+        <img src="images/travel-front-color.svg" alt="프로젝트 아이콘" />
+        Projects
+      </div>
+      <div class="project-grid">
+        <!-- 카드형 프로젝트들 -->
+        <div class="project-card" data-animate="fade-in" style="--delay: 0.2s">
+          <img src="images/project-1.png" alt="Collabo 썸네일" />
+          <div class="project-info">
+            <h3>👫 인플루언서 마케팅 시스템</h3>
+            <div class="tags">
+              <span class="tag">팀장</span>
+              <span class="tag">프론트엔드</span>
+              <span class="tag">UI/UX</span>
+            </div>
+            <p class="date">2024.03.04 ~ 2024.12.20</p>
+          </div>
+        </div>
+        <!-- 다른 카드들도 추가 -->
+        <div class="project-card" data-animate="fade-in" style="--delay: 0.4s">
+          <img src="images/project-1.png" alt="Collabo 썸네일" />
+          <div class="project-info">
+            <h3>👫 인플루언서 마케팅 시스템</h3>
+            <div class="tags">
+              <span class="tag">팀장</span>
+              <span class="tag">프론트엔드</span>
+              <span class="tag">UI/UX</span>
+            </div>
+            <p class="date">2024.03.04 ~ 2024.12.20</p>
+          </div>
+        </div>
+        <div class="project-card" data-animate="fade-in" style="--delay: 0.6s">
+          <img src="images/project-1.png" alt="Collabo 썸네일" />
+          <div class="project-info">
+            <h3>👫 인플루언서 마케팅 시스템</h3>
+            <div class="tags">
+              <span class="tag">팀장</span>
+              <span class="tag">프론트엔드</span>
+              <span class="tag">UI/UX</span>
+            </div>
+            <p class="date">2024.03.04 ~ 2024.12.20</p>
+          </div>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
