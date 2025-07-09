@@ -10,11 +10,12 @@
 
 body {
   font-family: "Pretendard", sans-serif;
-  background: #e0eafc;
+  background: linear-gradient(to bottom, #b6c4d8, #e5edf3);
   padding: 0;
   margin: 0;
 }
-/* 네비게이션 바  */
+
+/* 네비게이션 바 
 .navbar {
   position: fixed;
   top: 20px;
@@ -45,7 +46,7 @@ body {
 
 .navbar li a:hover {
   color: #00bfa6;
-}
+} */
 
 .container {
   display: flex;
@@ -63,9 +64,7 @@ body {
   flex: 2;
   border-right: 1px solid #eee;
   background: #fff;
-  /* 왼쪽 섹션은 slideInLeft 애니메이션 적용 */
-  animation: slideInLeft 1s ease;
-  padding: 40px;
+  padding: 50px 60px;
 }
 
 .right-column {
@@ -75,7 +74,32 @@ body {
   /* 오른쪽 섹션은 slideInRight 애니메이션 적용 */
   animation: slideInRight 1s ease;
 }
+.job {
+  padding: 20px 0;
+  border-bottom: 1px solid #eee;
+}
 
+.job:last-child {
+  border-bottom: none;
+}
+
+.job h3 {
+  font-size: 17px;
+  color: #2c3e50;
+  margin-bottom: 6px;
+}
+
+.job a {
+  font-size: 13px;
+  color: #777;
+  margin-bottom: 10px;
+}
+
+.job p {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.6;
+}
 .job b {
   font-size: 15px;
   cursor: pointer;
@@ -111,7 +135,7 @@ h1 {
   margin-bottom: 5px;
   b {
     font-size: 36px;
-    color: #8ab1f8;
+    color: #b1c5e0;
   }
 }
 
@@ -122,12 +146,27 @@ h2 {
 }
 
 .title {
-  font-size: 18px;
+  font-size: 20px;
   font-weight: bold;
   color: #00bfa6;
-  margin-top: 40px;
-  margin-bottom: 10px;
+  margin-top: 50px;
+  margin-bottom: 20px;
   letter-spacing: 1px;
+  position: relative;
+}
+
+.section-block {
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #ddd;
+}
+.section-block:last-child {
+  border-bottom: none;
+}
+.section-block h4 {
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #222;
 }
 
 h3,
@@ -149,12 +188,13 @@ p {
 
 ul {
   list-style: none;
-  padding: 0;
-  margin: 10px 0 0 0;
+  padding-left: 0;
+  margin: 0;
 }
-
 ul li {
   margin-bottom: 8px;
+  font-size: 14px;
+  color: #555;
 }
 
 .contact {
@@ -166,17 +206,30 @@ ul li {
   display: flex;
   flex-wrap: wrap;
   gap: 15px;
-  padding: 10px 0;
+  margin-top: 10px;
 }
 
 .icon i {
+  font-size: 1.8rem;
+  color: #555;
+}
+
+.icon-link {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.icon-link i {
+  font-size: 1.8rem;
+  color: #555;
+  transition: transform 0.3s, color 0.3s;
   cursor: pointer;
 }
 
 /* 아이콘 hover시 1.2배로 scale-up, 색상 변화 */
-.icon i:hover {
-  transition: transform 0.3s, color 0.3s;
-  transform: scale(1.2);
+.icon-link i:hover {
   color: #00bfa6;
 }
 /* keyframes을 이용한 애니메이션 적용 */
@@ -295,7 +348,7 @@ ul li {
   gap: 12px;
   font-size: 34px;
   font-weight: bold;
-  color: #222;
+  color: #777;
   margin-bottom: 40px;
   justify-content: center;
 }
